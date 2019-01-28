@@ -1,3 +1,13 @@
 1.- Comando para crear un proyecto. Creará una carpeta "laravel" en el directorio donde se ejecute.
 Dependerá mucho del equipo y la conexión pero este comando puede durar una cantidad  considerable de minutos
 composer create-project laravel/laravel --prefer-dist
+/*********IMPORTANTE********/
+TODOS LOS COMANDOS DEBEN SER REALIZADOS DESDE LA CARPETA DEL PROYECTO
+2.- Por defecto Laravel crea un proyecto cuyao name es "app". para cambiarlo se hace el siguiente comando
+php artisan app:name NombreNuevo
+
+3.- levantar el servidor en modo Debug 
+php artisan serve
+
+4.- Crear un Controlador se hace con el comando
+php artisan make:controller NombreContolador
