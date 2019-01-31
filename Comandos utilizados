@@ -8,6 +8,24 @@ php artisan app:name NombreNuevo
 
 3.- levantar el servidor en modo Debug 
 php artisan serve
+si fallara se puede usar php -S localhost:puerto server.php
 
 4.- Crear un Controlador se hace con el comando
 php artisan make:controller NombreContolador
+ si se esta trabajando con resouce
+ php artisan make controller NombreControlador --resource
+5.- Para trabajar con formularuios Collective
+composer require "laravelcollective/html":"^5.4.0"
+hay que actualizar el archivo config/app.php
+ 'providers' => [
+    // ...
+    Collective\Html\HtmlServiceProvider::class,
+    // ...
+  ],
+  
+   'aliases' => [
+    // ...
+      'Form' => Collective\Html\FormFacade::class,
+      'Html' => Collective\Html\HtmlFacade::class,
+    // ...
+  ],
