@@ -29,3 +29,12 @@ hay que actualizar el archivo config/app.php
       'Html' => Collective\Html\HtmlFacade::class,
     // ...
   ],
+5.- Para crear Validaciones usando request
+php artisan make:request nombreRequest
+
+6.- crear una migracion
+php artisan make:migration nombreMigration --table=nombretabla
+--table es optativo
+
+7.- crear un model
+php artisan make:model nombreModelo
