@@ -9,6 +9,7 @@ php artisan app:name NombreNuevo
 3.- levantar el servidor en modo Debug 
 php artisan serve
 si fallara se puede usar php -S localhost:puerto server.php
+levantar con public php -S localhost:puerto -t public/
 
 4.- Crear un Controlador se hace con el comando
 php artisan make:controller NombreContolador
