@@ -1,0 +1,10 @@
+//Ver los archivos que se van generando
+//1 crear Modelo
+php artisan make:model Bodega
+//genera archivo app/Bodega.php
+//en filliable se deben poner los campos modificables
+
+//2 Crear Migracion
+php artisan make:migration createBodega
+//genera archivo databases/fechacreateBodega.php
+//agregar cada uno de los campos y el softdeletes si es necesario
