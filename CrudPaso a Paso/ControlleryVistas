@@ -1,0 +1,14 @@
+/*******************
+Se creó el archivo BodegaController.php
+además en la carpeta resources/views se crea la carpeta Bodega
+en la carpeta resources/views existen layouts, alerts y forms
+****************************/
+/***************
+Método index
+la idea es obtener los valores almacenados en la base de datos con el Model Bodega
+por lo que se agrega al comienzo de BodegaController la línea use App\Bodega para acceder directamente al modelo y sus métodos
+*****************************/
+index
+$bodegas=Bodega::paginate(5);//entrega paginado los elementos
+return view('Bodega.index',compact('bodegas'));
+// en la carpeta de Bodega de vistas hay que acregar el archivo index.blade.php
