@@ -23,3 +23,7 @@ en el archivo se crean los metodos index,show,edit,update, create, store y destr
 //5 agregar rutas en el archivo routes/web.php
 //agregar Route::resource('Bodega','BodegaController')->middleware('auth');
 //middleware('auth') implica que sólo alguien loguedo podrá ingresar
+
+//6 crear request para validaciones
+php artisan make:request BodegaRequest
+//se crea archivo app/http/request/BodegaRequest
