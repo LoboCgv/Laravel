@@ -1,4 +1,9 @@
 /*******************
+agregar al inicio
+use Session;
+use Redirect;
+use App\Http\Requests\BodegaRequest;
+
 Se creó el archivo BodegaController.php
 además en la carpeta resources/views se crea la carpeta Bodega
 en la carpeta resources/views existen layouts, alerts y forms
@@ -12,3 +17,16 @@ index
 $bodegas=Bodega::paginate(5);//entrega paginado los elementos
 return view('Bodega.index',compact('bodegas'));
 // en la carpeta de Bodega de vistas hay que acregar el archivo index.blade.php
+//create retornar la vista create de la carpeta Bodega
+return view('Bodega.create')
+
+/******************************************/
+Modificar el archivo BodegaRequest para las reglas de ingreso
+fijar authorize en rturn true
+las reglas deben hacerreferencia a un campo de una tabla que será accedida y poner
+=>'unique:tabla|required' entre otras opciones
+/********************/
+
+/***********************************/
+en la función store cambiar Request $request por BodegaRequest $request y manejar normalmente
+/***********************/
