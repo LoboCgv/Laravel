@@ -8,3 +8,18 @@ php artisan make:model Bodega
 php artisan make:migration createBodega
 //genera archivo databases/fechacreateBodega.php
 //agregar cada uno de los campos y el softdeletes si es necesario
+
+//3 realizar migracion
+php artisan migrate
+//se crea la tabla bodega
+
+//4 Crear Controlador
+php artisan make:controller BodegaController --resource
+//crea archivo app/http/Controllers/BodegaController
+/*
+en el archivo se crean los metodos index,show,edit,update, create, store y destroy debido a que en la creación se uso
+--resource
+*/
+//5 agregar rutas en el archivo routes/web.php
+//agregar Route::resource('Bodega','BodegaController')->middleware('auth');
+//middleware('auth') implica que sólo alguien loguedo podrá ingresar
